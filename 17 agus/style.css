@@ -1,0 +1,376 @@
+*{
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    background-color: #CB0404;
+    padding: 10px;
+    border: 1px;
+    border-radius: 5px;
+    width: 100%;
+    height: 80px;
+}
+
+
+.header-logo{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-logo img{
+    width: 80px;
+}
+
+.header-title{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+}
+
+.header-utama{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-utama img{
+    margin: auto;
+    width: 150px;
+}
+
+.title-utama{
+    margin: auto;
+}
+
+.judul{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: White;
+}
+
+nav{
+    position: sticky;
+    top: 5px;
+    background-color: #7D0A0A;
+    border: 1px;
+    border-radius: 5px;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li{
+    height: 40px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+nav a:hover{
+    color: #CB0404;
+}
+
+
+.menu{
+    margin-left: auto;
+    margin-top: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+    justify-content: flex-end;
+}
+
+.sidebar{
+    background-color: rgba(85, 107, 47, 0.700);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.sidebar a:hover{
+    background-color: #626F47;
+}
+
+/* Konten */
+
+.konten{
+    border: 1px solid #8A0000;
+    border-radius: 5px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.konten>h1{
+    text-align: center;
+    color: #8A0000;
+}
+
+.konten>p{
+    text-align: justify;
+}
+
+.konten-utama>p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+ol{
+    padding-left: 40px;
+}
+
+img{
+    width: 30%;
+    display: block;
+    margin: 0px auto;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 80%;
+}
+
+.bentang{
+    border: 1px solid;
+    width: 30%;
+}
+
+.boxkonten{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boxsegmen{
+    width: 300px;
+    height: 380px;
+    margin: 20px;
+    border: 1px solid #8A0000;
+    border-radius: 10px;
+}
+
+.boximage>img{
+    width: 100%;
+    height: 180px;
+}
+
+.boxdesc{
+    padding: 5px;
+    text-align: justify;
+}
+
+.penulis{
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+/* form */
+
+.form_group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* .form_group label{
+    font-size: 20px;
+    color: #626F47;
+    display: block;
+} */
+
+/* .form_group input{
+    display: block;
+    margin-top: 10px;
+    width: 50%;
+} */
+
+.form_group textarea{
+    display: block;
+    margin-top: 10px;
+    height: 100px;
+    width: 50%;
+}
+
+.kirim{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #cd0202;
+    border: 2px solid #8A0000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.kirim:hover{
+    background-color: #FFD8D8;
+}
+
+.kirim:active{
+    background-color: #E14434;
+    border: 2px ;
+    border-radius: 50px;
+    color: white;
+}
+
+.lanjut{
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #537D5D;
+    border: 2px solid #537D5D;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.lanjut>a{
+    text-decoration: none;
+    color: #537D5D;
+}
+
+.tmbl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lanjut:hover{
+    background-color: #B6C4B6;
+    color: white;
+}
+
+/* Form pendaftaran */
+.form .inputBox{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form :where(.inputBox input, .selectBox){
+    position: relative;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    color: #707070;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 8px;
+    padding: 0 15px;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .genderBox{
+    margin-top: 20px;
+}
+
+.genderBox h4{
+    margin-bottom: 8px;
+}
+
+.form :where(.genderoption, .gender){
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.form .gender{
+    column-gap: 5px;
+}
+
+.form :where(.gender input, .gender label){
+    cursor: pointer;
+}
+
+.selectBox select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1em;
+}
+
+.form button{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    background-color: #E14434;
+    transition: all 0.2s;
+    border: 1px ;
+    border-radius: 10px;
+}
+
+.form button:hover{
+    background-color: #cd0202;
+}
+
+.footer{
+    background-color: #626F47;
+    color: white;
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+    margin-top: 50px;
+    text-align: center;
+    bottom: 0px;
+}
+/* mobile */
+
+@media only screen and (max-width:600px) {
+    .hide{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}

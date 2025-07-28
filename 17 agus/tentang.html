@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang penulis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="HUTRI80_FA_Logogram_On White.jpg" alt="logohut">
+        </div>
+        <div class="header-title">
+            <a class="judul" href="Beranda.html">HUT RI KE-80</a>
+        </div>
+        <ul class="menu">
+            <li onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul class="sidebar">
+             <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="form.html">Pendaftaran</a></li>
+            <li><a href="Tentang.html">Tentang</a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="form.html">Pendaftaran</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <div class="konten">
+        <h1>Tentang Penulis</h1>
+        <img class="penulis" src="penulis.jpg" alt="">
+        <h3>- Biodata</h3>
+        <p><b>Nama</b>: Rasya Arkananta <br>
+            <b>Tempat Tanggal Lahir</b>: Pasuruan, 7 Januari 2009 <br>
+            <b>Alamat</b>: Desa Lumbangrejo, Kecamatan Prigen, Kabupaten Pasuruan</p>
+            <br><br><br>
+    </div>
+    <br>
+    <div class="konten">        
+        <h1>Saran & Kritik</h1>
+        <form action="">
+            <div class="form_group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" for="nama">
+            </div>
+
+            <div class="form_group">
+                <label for="sarankritik">Saran & Kritik:</label>
+                <textarea name="sarankritik" id="sarankritik"></textarea>
+            </div>
+
+            <button type="submit" class="kirim">Submit</button>
+        </form>
+
+        <h3>Atau Hubungi:</h3>
+        <b>Email</b>: rasyaarkananta01@gmail.com
+    </div>
+</body>
+</html>
