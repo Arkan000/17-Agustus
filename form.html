@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="HUTRI80_FA_Logogram_On White.jpg" alt="logohut">
+        </div>
+        <div class="header-title">
+            <a class="judul" href="Beranda.html">HUT RI KE-80</a>
+        </div>
+        <ul class="menu">
+            <li onclick=showsidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </div>
+
+    <nav>
+        <ul class="sidebar">
+             <li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="form.html">Pendaftaran</a></li>
+            <li><a href="Tentang.html">Tentang</a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="form.html">Pendaftaran</a></li>
+            <li><a href="Tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <div class="konten kontenform">
+        <h1>Pendaftaran lomba</h1><br>
+        <h3>Silahkan isi form berikut ini untuk pendaftaran lomba:</h3>
+
+        <div class="container">
+            <form action="/" class="form" id="form">
+                <div class="inputBox">
+                    <label for="">Nama Lengkap:</label>
+                    <input type="text" name="nama" id="nama" placeholder="Masukkan nama lengkap" >
+                </div>
+
+                <div class="inputBox">
+                    <label for="">Tanggal Lahir:</label>
+                    <input type="date" name="tgl" id="tgl" placeholder="Masukkan Tanggal Lahir anda">
+                </div>
+
+
+                <div class="inputBox">
+                    <label for="">NIK:</label>
+                    <input type="number" name="nik" id="nik" placeholder="Masukkan NIK anda" >
+                </div>
+
+                <div class="inputBox">
+                    <label for="">No. HP:</label>
+                    <input type="number" name="nohp" id="nohp" placeholder="Masukkan nomor HP anda">
+                </div>
+
+                <div class="genderBox">
+                    <h4>Jenis Kelamin:</h4>
+                    <div class="genderoption">
+                        <div class="gender">
+                            <input type="radio" id="lanang" name="gender" >
+                            <label for="lanang">Laki-laki</label>
+                        </div>
+
+                        <div class="gender">
+                            <input type="radio" id="wedok" name="gender">
+                            <label for="wedok">Perempuan</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inputBox">
+                    <label for="">Alamat</label>
+                    <input type="text" name="" id="alamat" placeholder="Provinsi">
+                    <input type="text" name="" id="alamat" placeholder="Kabupaten">
+                    <input type="text" name="" id="alamat" placeholder="Kecamatan">
+                    <div class="column">
+                        <input type="text" name="" id="alamat" placeholder="Desa">
+                        <input type="text" name="" id="alamat" placeholder="RT/RW">
+                    </div>
+                    <h4>Lomba:</h4>
+                    <div class="selectBox">
+                            <select name="" id="">
+                                <option value="">Makan Kerupuk</option>
+                                <option value="">Tarik Tambang</option>
+                                <option value="">Balap Karung</option>
+                                <option value="">Panjat Pinang</option>
+                                <option value="">Gebuk GUling</option>
+                                <option value="">Balap Bakiak</option>
+                            </select>
+                        </div>
+                </div>
+
+                <button type="submit" onclick="kirim()">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
